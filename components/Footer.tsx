@@ -8,11 +8,16 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
-          <div>
-            <span className="text-2xl font-black text-white tracking-tighter">
-              ZERO<span className="text-yellow-500">CALORIA</span>
-            </span>
-            <p className="mt-4 text-gray-400 text-sm leading-relaxed max-w-xs">
+          <div className="flex flex-col items-start">
+            <img 
+              src="https://i.imgur.com/ts8zzpN.png" 
+              alt="Logo ZeroCaloria - Emagrecimento Saudável" 
+              width="150"
+              height="48"
+              loading="lazy"
+              className="h-12 w-auto object-contain mb-6" 
+            />
+            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Transformando vidas através de uma alimentação inteligente, nutritiva e sem sofrimento. Junte-se a milhares de pessoas que recuperaram a autoestima.
             </p>
           </div>
@@ -40,13 +45,13 @@ const Footer: React.FC = () => {
                 <div className="bg-gray-900 p-2 rounded-lg">
                   <Instagram size={20} />
                 </div>
-                <span>@adelaidecuccina</span>
+                <span>@zerocaloria0</span>
               </a>
-              <a href="mailto:contato@zerocaloria.com.br" className="flex items-center gap-3 text-gray-400 hover:text-yellow-500 transition-colors">
+              <a href="mailto:Zerocaloria0@gmail.com" className="flex items-center gap-3 text-gray-400 hover:text-yellow-500 transition-colors">
                 <div className="bg-gray-900 p-2 rounded-lg">
                   <Mail size={20} />
                 </div>
-                <span>contato@zerocaloria.com.br</span>
+                <span>Zerocaloria0@gmail.com</span>
               </a>
             </div>
           </div>
@@ -54,7 +59,21 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
           <p>© {new Date().getFullYear()} ZeroCaloria. Todos os direitos reservados.</p>
-          <p className="mt-2 md:mt-0">Desenvolvido com excelência.</p>
+          
+          <div className="flex items-center gap-2 mt-4 md:mt-0 opacity-50 hover:opacity-100 transition-opacity duration-300">
+            <span>Desenvolvido por</span>
+            <div className="flex items-center gap-1.5">
+               <img 
+                 src="https://fal.media/files/monkey/K_A6kQZgJ8_H7qYnF6g8T.png" 
+                 alt="Iceplane Logo" 
+                 width="20"
+                 height="20"
+                 loading="lazy"
+                 className="h-5 w-auto object-contain filter grayscale brightness-150" 
+               />
+               <span className="font-semibold tracking-wide">Iceplane</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

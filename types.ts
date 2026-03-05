@@ -19,3 +19,13 @@ export interface Benefit {
   description: string;
   icon: React.ComponentType<any>;
 }
+
+export interface Transformation {
+  id: number;
+  image: string;
+  loss: string;
+  name: string;
+  days: number;
+  phase: 'before' | 'after';
+  gender: 'male' | 'female';
+}

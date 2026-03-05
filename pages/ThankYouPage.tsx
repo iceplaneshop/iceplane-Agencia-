@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CheckCircle, Mail, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LINKS } from '../constants';
+import { trackPurchase } from '../src/utils/tracking';
 
 const ThankYouPage: React.FC = () => {
+  useEffect(() => {
+    trackPurchase(29.99);
+  }, []);
+
   return (
     <div className="min-h-screen bg-neutral-950 text-white flex flex-col items-center justify-center p-4">
       <div className="max-w-lg w-full bg-neutral-900 border border-gray-800 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
